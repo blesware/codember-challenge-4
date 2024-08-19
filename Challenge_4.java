@@ -8,19 +8,19 @@ public class Challenge_4 {
 
         String banner = """
         
-        ██████╗ ██╗     ███████╗███████╗██╗    ██╗ █████╗ ██████╗ ███████╗
-        ██╔══██╗██║     ██╔════╝██╔════╝██║    ██║██╔══██╗██╔══██╗██╔════╝
-        ██████╔╝██║     █████╗  ███████╗██║ █╗ ██║███████║██████╔╝█████╗  
-        ██╔══██╗██║     ██╔══╝  ╚════██║██║███╗██║██╔══██║██╔══██╗██╔══╝  
-        ██████╔╝███████╗███████╗███████║╚███╔███╔╝██║  ██║██║  ██║███████╗
-        ╚═════╝ ╚══════╝╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+            ██████╗ ██╗     ███████╗███████╗██╗    ██╗ █████╗ ██████╗ ███████╗
+            ██╔══██╗██║     ██╔════╝██╔════╝██║    ██║██╔══██╗██╔══██╗██╔════╝
+            ██████╔╝██║     █████╗  ███████╗██║ █╗ ██║███████║██████╔╝█████╗  
+            ██╔══██╗██║     ██╔══╝  ╚════██║██║███╗██║██╔══██║██╔══██╗██╔══╝  
+            ██████╔╝███████╗███████╗███████║╚███╔███╔╝██║  ██║██║  ██║███████╗
+            ╚═════╝ ╚══════╝╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 
-        Desafio semana 4 de Codember v1.0
+            Desafio semana 4 de Codember v1.0
 
-        (En Windows presiona Ctrl + Z en una nueva línea para terminar de leer)
-        (En Linux Ctrl + D en una nueva línea para terminar de leer)
+            (En Windows presiona Ctrl + Z en una nueva línea para terminar de leer)
+            (En Linux Ctrl + D en una nueva línea para terminar de leer)
 
-        Ingresa un texto:""";
+            Ingresa un texto:""";
 
         System.out.println(banner);
 
@@ -42,11 +42,11 @@ public class Challenge_4 {
 
         int validCounter = 0;
 
-        for(int i = 0; i < lineas.length; i++) {
+        for (int i = 0; i < lineas.length; i++) {
 
-            for(int j = 0; j < lineas[i].length(); j++) {
+            for (int j = 0; j < lineas[i].length(); j++) {
                 
-                if(String.valueOf(lineas[i].charAt(j)).equals("-")) {
+                if (String.valueOf(lineas[i].charAt(j)).equals("-")) {
                     
                     String alfa = lineas[i].substring(0, j);
                     String checksum = lineas[i].substring((j + 1), lineas[i].length());
@@ -77,7 +77,7 @@ public class Challenge_4 {
                     }
 
                     //Verificar si el checksum es igual al dado originalmente
-                    if(checksum.equals(check)) {                        
+                    if (checksum.equals(check)) {                        
 
                         checksumValid[validCounter] = check;
                         validCounter++;
